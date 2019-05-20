@@ -1,16 +1,13 @@
 package com.stackroute.db;
 
-import java.sql.DriverManager;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 
 public class JDBCTransactionDemo {
 
-    private static final String DB_DRIVER = "oracle.jdbc.driver.OracleDriver";
+    private static final String DB_DRIVER = "com.mysql.cj.jdbc.Driver";
     private static final String DB_CONNECTION = "jdbc:mysql://localhost:3306/customerdb";
-    private static final String DB_USER = "user";
+    private static final String DB_USER = "root";
     private static final String DB_PASSWORD = "Root@123";
 
     public void jdbcTransaction() throws SQLException {
@@ -49,6 +46,14 @@ public class JDBCTransactionDemo {
             dbConnection.commit();
 
             System.out.println("Done!");
+            Statement stmt = dbConnection.createStatement();
+
+            ResultSet rs = stmt.executeQuery("select * from customerdetails");
+            while (rs.next())
+                System.out.println(rs.getInt(1) + "  " + rs.getString(2)+"  "+ rs.getInt(3));
+
+
+
 
         } catch (SQLException e) {
 
@@ -103,12 +108,7 @@ public class JDBCTransactionDemo {
 
     }
 
-    private static java.sql.Timestamp getCurrentTimeStamp() {
 
-        java.util.Date today = new java.util.Date();
-        return new java.sql.Timestamp(today.getTime());
-
-    }
 
 }
 

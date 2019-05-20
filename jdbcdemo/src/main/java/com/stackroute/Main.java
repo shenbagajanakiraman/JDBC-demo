@@ -1,9 +1,6 @@
 package com.stackroute;
 
-import com.stackroute.db.CrudOperation;
-import com.stackroute.db.JDBCTransactionDemo;
-import com.stackroute.db.ResultsetMetadataDemo;
-import com.stackroute.db.RowsetDemo;
+import com.stackroute.db.*;
 
 public class Main {
     public static void main(String[] args) throws Exception{
@@ -16,8 +13,13 @@ public class Main {
 //        RowsetDemo rowsetDemo = new RowsetDemo();
 //        rowsetDemo.displayData();
 
-        JDBCTransactionDemo jdbcTransactionDemo = new JDBCTransactionDemo();
-        jdbcTransactionDemo.jdbcTransaction();
+//        JDBCTransactionDemo jdbcTransactionDemo = new JDBCTransactionDemo();
+//        jdbcTransactionDemo.jdbcTransaction();
+
+
+        JDBCBatchProcessingDemo jdbcBatchProcessingDemo = new JDBCBatchProcessingDemo();
+        jdbcBatchProcessingDemo.jdbcBatchProcessing();
+
 
 
     }

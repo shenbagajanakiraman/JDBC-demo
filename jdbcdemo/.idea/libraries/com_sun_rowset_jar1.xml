@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="com.sun.rowset.jar1">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/Downloads/com.sun.rowset.jar.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/com.sun.rowset.jar.zip!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Downloads/com.sun.rowset.jar.zip!/" />
+    </JAVADOC>
+    <NATIVE>
+      <root url="jar://$USER_HOME$/Downloads/com.sun.rowset.jar.zip!/" />
+    </NATIVE>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/com.sun.rowset.jar.zip!/" />
+    </SOURCES>
+    <jarDirectory url="jar://$USER_HOME$/Downloads/com.sun.rowset.jar.zip!/" recursive="false" />
+    <jarDirectory url="jar://$USER_HOME$/Downloads/com.sun.rowset.jar.zip!/" recursive="false" type="SOURCES" />
+  </library>
+</component>

@@ -19,6 +19,9 @@ public class DataBaseMetaDataDemo {
                 System.out.println("Database Product Version: "+dbmd.getDatabaseProductVersion());
 
                 con.close();
-            }catch(Exception e){ System.out.println(e);}
+            }
+            catch(Exception e){
+                System.out.println(e);
+            }
         }
     }

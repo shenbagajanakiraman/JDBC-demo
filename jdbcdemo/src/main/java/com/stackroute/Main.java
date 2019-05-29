@@ -10,7 +10,7 @@ public class Main {
 //        crudOperation.displayCustomrerByName("Arjun","Male");
 //        ResultsetMetadataDemo rsDemo = new ResultsetMetadataDemo();
 //        rsDemo.displayData();
-//
+
 //        RowsetDemo rowsetDemo = new RowsetDemo();
 //        rowsetDemo.displayData();
 
@@ -18,11 +18,11 @@ public class Main {
 //        jdbcTransactionDemo.jdbcTransaction();
 
 
-//        JDBCBatchProcessingDemo jdbcBatchProcessingDemo = new JDBCBatchProcessingDemo();
-//        jdbcBatchProcessingDemo.jdbcBatchProcessing();
+        JDBCBatchProcessingDemo jdbcBatchProcessingDemo = new JDBCBatchProcessingDemo();
+        jdbcBatchProcessingDemo.jdbcBatchProcessing();
 
-        DataBaseMetaDataDemo dataBaseMetaDataDemo = new DataBaseMetaDataDemo();
-        dataBaseMetaDataDemo.metadataDisplay();
+//        DataBaseMetaDataDemo dataBaseMetaDataDemo = new DataBaseMetaDataDemo();
+//        dataBaseMetaDataDemo.metadataDisplay();
 
 
     }

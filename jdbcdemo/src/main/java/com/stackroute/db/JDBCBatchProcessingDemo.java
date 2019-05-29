@@ -12,6 +12,15 @@ public class JDBCBatchProcessingDemo {
             PreparedStatement ps=con.prepareStatement("insert into customerdetails values(?,?,?,?)");
 
             BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+
+
+            Statement stmt = con.createStatement();
+
+            ResultSet rs = stmt.executeQuery("select * from customerdetails");
+            while (rs.next())
+                System.out.println(rs.getInt(1) + "  " + rs.getString(2)+"  "+ rs.getInt(3));
+
+
             while(true){
 
                 System.out.println("enter id");
@@ -49,10 +58,7 @@ public class JDBCBatchProcessingDemo {
 
 
 
-            Statement stmt = con.createStatement();
-
-            ResultSet rs = stmt.executeQuery("select * from customerdetails");
-            while (rs.next())
+             while (rs.next())
                 System.out.println(rs.getInt(1) + "  " + rs.getString(2)+"  "+ rs.getInt(3));
 
             con.close();
